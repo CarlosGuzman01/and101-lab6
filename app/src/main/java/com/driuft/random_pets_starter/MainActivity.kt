@@ -44,7 +44,6 @@ class MainActivity : AppCompatActivity() {
 
 
             }
-
             override fun onFailure(
                 statusCode: Int,
                 headers: Headers?,

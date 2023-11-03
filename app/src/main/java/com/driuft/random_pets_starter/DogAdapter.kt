@@ -30,6 +30,7 @@ class DogAdapter(val dogList: MutableList<String>) : RecyclerView.Adapter<DogAda
     override fun onBindViewHolder(holder: DogViewHolder, position: Int) { //modifying this for a second
        Glide.with(holder.itemView)
            .load(dogList[position])
+           .placeholder(R.drawable.img)
            .centerCrop()
            .into(holder.dogImage)
 
